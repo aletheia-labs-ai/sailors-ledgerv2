@@ -15,13 +15,47 @@ async def main():
     deck = load_tarot_cards("data/tarot_cards/cards.json")
     draws = draw_random_cards(deck, 3)
 
+    from schemas.seed import TarotDraw
+    from llm.tarot_question_engine import generate_tarot_question
+
     for i, draw in enumerate(draws):
         print(f"\nCard Drawn #{i+1}: {draw['card_name']}")
         print(f"Meaning: {draw['meaning']}")
-        response = input(f"{draw['question']} ").strip()
-        seeder.add_draw(draw["card_name"], draw["meaning"], response)
+        print(f"Theme Question: {draw['question']}")
+
+        scenario_packet = await generate_tarot_question(draw["card_name"], draw["meaning"], draw["question"])
+        if not scenario_packet:
+            print("Failed to generate tarot scenario. Exiting.")
+            return
+
+        print(f"\n{scenario_packet['scenario']}")
+        for idx, choice in enumerate(scenario_packet["choices"], 1):
+            print(f"{idx}. {choice}")
+        
+        while True:
+            try:
+                selected = int(input("Choose 1-4: ").strip())
+                if 1 <= selected <= len(scenario_packet["choices"]):
+                    break
+            except ValueError:
+                pass
+            print("Invalid choice. Try again.")
+
+        selected_response = scenario_packet["choices"][selected - 1]
+        seeder.add_draw(TarotDraw(
+            card_name=draw["card_name"],
+            card_meaning=draw["meaning"],
+            player_response=selected_response
+        ))
 
     seed_response = await seeder.finalize_world_seed()
+
+    from llm.persona_engine import generate_persona_prophecy
+    persona_text = await generate_persona_prophecy(seeder.build_packet().model_dump())
+    if persona_text:
+        print("\nYour Prophecy:")
+        print(persona_text)
+        print("\n" + "-"*40 + "\n")
 
     world_id = generate_world_id()
     world = World(name=world_id)
@@ -38,6 +72,7 @@ async def main():
     print(f"\nWorld '{world.name}' initialized with {len(world.towns)} towns.")
     for town in world.towns.values():
         print(f"- {town.name}: {town.spirit}")
+        print(f"  Narrative: {town.narrative[-1] if town.narrative else 'No narrative.'}")
 
     print("\nWorld generation complete.")
 

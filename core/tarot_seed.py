@@ -8,12 +8,8 @@ class TarotSeedingEngine:
         self.player_name = player_name
         self.draws: List[TarotDraw] = []
 
-    def add_draw(self, card_name: str, card_meaning: str, player_response: str):
-        self.draws.append(TarotDraw(
-            card_name=card_name,
-            card_meaning=card_meaning,
-            player_response=player_response
-        ))
+    def add_draw(self, draw: TarotDraw):
+        self.draws.append(draw)
 
     def build_packet(self) -> SeedPacket:
         return SeedPacket(
