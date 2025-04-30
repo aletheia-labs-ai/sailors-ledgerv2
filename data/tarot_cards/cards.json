@@ -1,0 +1,200 @@
+[
+  {
+    "card_name": "The Fool",
+    "meaning": "Beginnings, naivety, spontaneity",
+    "questions": [
+      "When have you stepped into the unknown without fear?",
+      "What excites you about the path ahead, even if it’s unclear?",
+      "What is something you would do if you weren’t afraid to fail?"
+    ]
+  },
+  {
+    "card_name": "The Magician",
+    "meaning": "Power, manifestation, skill",
+    "questions": [
+      "What inner ability are you only beginning to trust?",
+      "How do you bring ideas into reality?",
+      "When have you surprised yourself with your capability?"
+    ]
+  },
+  {
+    "card_name": "The High Priestess",
+    "meaning": "Intuition, mystery, the subconscious",
+    "questions": [
+      "What does your intuition tell you about a decision you’ve been avoiding?",
+      "When have you felt guided by something unseen?",
+      "What do you keep hidden, even from yourself?"
+    ]
+  },
+  {
+    "card_name": "The Empress",
+    "meaning": "Fertility, creation, abundance",
+    "questions": [
+      "What does nurturing mean to you, and who receives it?",
+      "What kind of beauty or comfort do you create around you?",
+      "How do you care for something that grows slowly?"
+    ]
+  },
+  {
+    "card_name": "The Emperor",
+    "meaning": "Structure, authority, control",
+    "questions": [
+      "What rules have you created for yourself?",
+      "When do you feel most in control—and is that good?",
+      "How do you respond to challenges to your authority?"
+    ]
+  },
+  {
+    "card_name": "The Hierophant",
+    "meaning": "Tradition, belief, spiritual guidance",
+    "questions": [
+      "What tradition do you follow, and why?",
+      "Where do you turn when you seek meaning?",
+      "How do you question or uphold your beliefs?"
+    ]
+  },
+  {
+    "card_name": "The Lovers",
+    "meaning": "Connection, values, duality",
+    "questions": [
+      "When did you last choose one path over another?",
+      "What does commitment mean to you?",
+      "How do you handle internal contradictions?"
+    ]
+  },
+  {
+    "card_name": "The Chariot",
+    "meaning": "Determination, willpower, triumph",
+    "questions": [
+      "What drives you forward even in chaos?",
+      "How do you take control when forces conflict?",
+      "What is your current victory—and what did it cost?"
+    ]
+  },
+  {
+    "card_name": "Strength",
+    "meaning": "Courage, compassion, inner resilience",
+    "questions": [
+      "What does strength look like when no one is watching?",
+      "How do you hold power with gentleness?",
+      "When have you faced something that scared you?"
+    ]
+  },
+  {
+    "card_name": "The Hermit",
+    "meaning": "Solitude, reflection, wisdom",
+    "questions": [
+      "When did solitude teach you something important?",
+      "What truth have you found only by stepping back?",
+      "How do you know when it’s time to withdraw?"
+    ]
+  },
+  {
+    "card_name": "Wheel of Fortune",
+    "meaning": "Change, fate, cycles",
+    "questions": [
+      "What pattern keeps repeating in your life?",
+      "How do you handle events beyond your control?",
+      "What has luck given—or taken—from you?"
+    ]
+  },
+  {
+    "card_name": "Justice",
+    "meaning": "Truth, fairness, consequences",
+    "questions": [
+      "What decision are you accountable for?",
+      "When have you had to accept consequences?",
+      "What truth are you avoiding?"
+    ]
+  },
+  {
+    "card_name": "The Hanged Man",
+    "meaning": "Surrender, new perspective, sacrifice",
+    "questions": [
+      "What must you give up to move forward?",
+      "When have you chosen stillness instead of action?",
+      "What happens when you see from another angle?"
+    ]
+  },
+  {
+    "card_name": "Death",
+    "meaning": "Endings, transformation, release",
+    "questions": [
+      "What part of your past must you let go?",
+      "What is dying in your world to make space for something new?",
+      "When have you grown from loss?"
+    ]
+  },
+  {
+    "card_name": "Temperance",
+    "meaning": "Balance, healing, moderation",
+    "questions": [
+      "What would balance look like in your current situation?",
+      "What are you overindulging or denying?",
+      "Where can you be more patient?"
+    ]
+  },
+  {
+    "card_name": "The Devil",
+    "meaning": "Temptation, bondage, shadow",
+    "questions": [
+      "What keeps you stuck that you pretend you control?",
+      "What desire do you fear owning?",
+      "When have you given your power away?"
+    ]
+  },
+  {
+    "card_name": "The Tower",
+    "meaning": "Destruction, awakening, collapse",
+    "questions": [
+      "What truth shattered something you built?",
+      "How do you rebuild after loss?",
+      "What belief did you lose faith in—and what replaced it?"
+    ]
+  },
+  {
+    "card_name": "The Star",
+    "meaning": "Hope, inspiration, renewal",
+    "questions": [
+      "What do you still hope for, despite setbacks?",
+      "Where do you find light when it’s darkest?",
+      "What restores you?"
+    ]
+  },
+  {
+    "card_name": "The Moon",
+    "meaning": "Illusion, dreams, uncertainty",
+    "questions": [
+      "What fears are you hiding from yourself?",
+      "What do your dreams try to tell you?",
+      "Where do you mistrust your own perception?"
+    ]
+  },
+  {
+    "card_name": "The Sun",
+    "meaning": "Joy, success, clarity",
+    "questions": [
+      "What truth fills you with joy?",
+      "When do you feel fully seen?",
+      "What deserves celebration right now?"
+    ]
+  },
+  {
+    "card_name": "Judgement",
+    "meaning": "Reckoning, renewal, higher calling",
+    "questions": [
+      "What truth about yourself can no longer be ignored?",
+      "When have you answered a call no one else heard?",
+      "What would it mean to be forgiven?"
+    ]
+  },
+  {
+    "card_name": "The World",
+    "meaning": "Completion, unity, fulfillment",
+    "questions": [
+      "What have you brought to completion?",
+      "Where do you feel whole?",
+      "What is your part in something greater?"
+    ]
+  }
+]
