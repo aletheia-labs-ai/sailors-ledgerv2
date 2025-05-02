@@ -5,6 +5,7 @@ from core.town import Town
 from core.tarot_seed import TarotSeedingEngine
 from utils.id_generator import generate_world_id
 from utils.tarot_loader import load_tarot_cards, draw_random_cards
+from llm.symbolic_arc_engine import generate_symbolic_arc
 
 async def main():
     print("Welcome to Sailor's Ledger V2")
@@ -30,8 +31,8 @@ async def main():
 
         print(f"\n{scenario_packet['scenario']}")
         for idx, choice in enumerate(scenario_packet["choices"], 1):
-            print(f"{idx}. {choice}")
-        
+            print(f"{idx}. {choice['text']}")
+
         while True:
             try:
                 selected = int(input("Choose 1-4: ").strip())
@@ -45,10 +46,16 @@ async def main():
         seeder.add_draw(TarotDraw(
             card_name=draw["card_name"],
             card_meaning=draw["meaning"],
-            player_response=selected_response
+            player_response={"text": selected_response["text"], "tag": selected_response["tag"]}
         ))
 
     seed_response = await seeder.finalize_world_seed()
+
+    arc_summary = await generate_symbolic_arc(seeder.build_packet().model_dump())
+    if arc_summary:
+        print("\nYour Symbolic Arc:")
+        print(arc_summary)
+        print("\n" + "-"*40 + "\n")
 
     from llm.persona_engine import generate_persona_prophecy
     persona_text = await generate_persona_prophecy(seeder.build_packet().model_dump())

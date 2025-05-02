@@ -1,0 +1,40 @@
+
+
+[
+  {
+    "card": "The Tower",
+    "theme": "Disruption, ego death, reversal",
+    "core_dilemma": "Will you preserve your status or accept collapse?",
+    "scenario": "Your faction is implicated in a catastrophic failure. Do you protect your reputation or reveal the truth that could ruin you?",
+    "choices": [
+      { "text": "Bury the evidence. Rebuild quietly.", "tag": "A" },
+      { "text": "Expose the truth and accept exile.", "tag": "B" },
+      { "text": "Deflect blame onto a rival faction.", "tag": "C" },
+      { "text": "Destroy all records and disappear.", "tag": "D" }
+    ]
+  },
+  {
+    "card": "The Lovers",
+    "theme": "Devotion, alignment, cost of duality",
+    "core_dilemma": "Do you honor your personal bond or follow collective duty?",
+    "scenario": "On the eve of a great migration, your partner refuses to leave. The convoy departs at dawn. What do you do?",
+    "choices": [
+      { "text": "Stay behind and build a life with them.", "tag": "A" },
+      { "text": "Leave at dawn and never look back.", "tag": "B" },
+      { "text": "Try to persuade them through the night.", "tag": "C" },
+      { "text": "Sabotage the convoy so no one leaves.", "tag": "D" }
+    ]
+  },
+  {
+    "card": "The Empress",
+    "theme": "Growth, nurturing, generational tension",
+    "core_dilemma": "Do you protect tradition or make room for change?",
+    "scenario": "Your mentor entrusts you with an ancient seed vault. A new climate demands a different crop. What do you plant?",
+    "choices": [
+      { "text": "Preserve the old seeds exactly as taught.", "tag": "A" },
+      { "text": "Crossbreed for resilience and future yield.", "tag": "B" },
+      { "text": "Destroy the vault to force the council's hand.", "tag": "C" },
+      { "text": "Abandon agriculture and turn to trade.", "tag": "D" }
+    ]
+  }
+]

@@ -1,10 +1,14 @@
 from pydantic import BaseModel
-from typing import List
+from typing import List, Literal
+
+class Choice(BaseModel):
+    text: str
+    tag: Literal["A", "B", "C", "D"]
 
 class TarotDraw(BaseModel):
     card_name: str
     card_meaning: str
-    player_response: str
+    player_response: Choice
 
 class SeedPacket(BaseModel):
     player_name: str
