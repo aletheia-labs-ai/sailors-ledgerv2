@@ -59,6 +59,9 @@ async def main():
         ))
 
     seed_response = await seeder.finalize_world_seed()
+    if not seed_response or not isinstance(seed_response, dict) or "towns" not in seed_response:
+        print("World generation failed. The response was invalid or improperly formatted.")
+        return
 
     arc_summary = await generate_symbolic_arc(seeder.build_packet().model_dump())
     if arc_summary:

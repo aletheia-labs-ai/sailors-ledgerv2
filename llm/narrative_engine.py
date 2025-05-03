@@ -29,12 +29,19 @@ async def generate_seeded_world_state(seed_packet: Dict) -> Optional[Dict]:
         {"role": "system", "content": (
             "You are a fantasy world generator. You will receive a tarot-based Seed Packet. "
             "Extract symbolic themes and use them as inspiration—do not copy player answers or card names literally. "
-            "Generate three towns. Each must have a:\n"
-            "- name (symbolic, original, world-appropriate)\n"
-            "- narrative (1–2 sentences describing the town’s identity and mood)\n"
-            "- spirit (a poetic phrase representing the town’s governing ethos)\n"
-            "Return valid JSON in this structure:\n"
-            "{ \"towns\": { \"TownName\": { \"narrative\": \"...\", \"spirit\": \"...\" }, ... } }"
+            "Generate exactly three towns. Each must include:\n"
+            "- A symbolic town name (use as JSON key, not inside object)\n"
+            "- A 'narrative': 1–2 sentence description of the town’s identity and tone\n"
+            "- A 'spirit': short poetic phrase representing the town’s governing energy or mood\n\n"
+            "Respond only with valid JSON in this exact format:\n\n"
+            "{\n"
+            "  \"towns\": {\n"
+            "    \"TownName1\": { \"narrative\": \"...\", \"spirit\": \"...\" },\n"
+            "    \"TownName2\": { \"narrative\": \"...\", \"spirit\": \"...\" },\n"
+            "    \"TownName3\": { \"narrative\": \"...\", \"spirit\": \"...\" }\n"
+            "  }\n"
+            "}\n\n"
+            "Do not use lists or arrays. Town names must be the dictionary keys. Do not include markdown. Respond with pure JSON only."
         )},
         {"role": "user", "content": prompt}
     ]

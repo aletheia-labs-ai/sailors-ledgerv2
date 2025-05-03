@@ -1,0 +1,74 @@
+[
+  {
+    "draw": 1,
+    "card": "The Devil",
+    "scenario": "In your quest for mastery over the realm's dark arts, you discover a forbidden tome that promises immense power. However, it comes with a pact that binds your soul to an unseen force. What will you do?",
+    "choices": [
+      {
+        "text": "Take the tome and embrace the pact for power.",
+        "tag": "A"
+      },
+      {
+        "text": "Reject the tome and seek strength through your own means.",
+        "tag": "B"
+      },
+      {
+        "text": "Attempt to use the tome's knowledge without fully accepting the pact.",
+        "tag": "C"
+      },
+      {
+        "text": "Burn the tome to free others from its temptation.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 2,
+    "card": "Wheel of Fortune",
+    "scenario": "As you stand at the crossroads of your journey, a mysterious fortune teller offers to reveal your fate with a single turn of the Wheel of Fortune. You reflect on the advantages and misfortunes that have shaped your path so far. Will you embrace the uncertainty of chance and risk it all, or will you choose to cling to what you know? What will you do?",
+    "choices": [
+      {
+        "text": "Spin the wheel and embrace whatever fate has in store.",
+        "tag": "A"
+      },
+      {
+        "text": "Decline the offer, preferring to forge your own path.",
+        "tag": "B"
+      },
+      {
+        "text": "Ask the fortune teller for guidance before making a choice.",
+        "tag": "C"
+      },
+      {
+        "text": "Attempt to cheat the wheel and gain control of your fate.",
+        "tag": "D"
+      }
+    ],
+    "selected": "C"
+  },
+  {
+    "draw": 3,
+    "card": "Temperance",
+    "scenario": "In your quest for self-discovery, you find yourself at a crossroads. A wise elder offers you two paths: one leads to a coveted artifact that promises immediate power, while the other guides you through a journey of wisdom, requiring patience and self-reflection. How do you choose to proceed?",
+    "choices": [
+      {
+        "text": "Pursue the path of immediate power and claim the artifact.",
+        "tag": "A"
+      },
+      {
+        "text": "Embrace the journey of wisdom, trusting the process.",
+        "tag": "B"
+      },
+      {
+        "text": "Attempt to sneak a glimpse of the artifact without commitment.",
+        "tag": "C"
+      },
+      {
+        "text": "Reject both paths out of frustration and seek a third option.",
+        "tag": "D"
+      }
+    ],
+    "selected": "B"
+  }
+]
