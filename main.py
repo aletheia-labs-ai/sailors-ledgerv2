@@ -6,6 +6,7 @@ from core.tarot_seed import TarotSeedingEngine
 from utils.id_generator import generate_world_id
 from utils.tarot_loader import load_tarot_cards, draw_random_cards
 from llm.symbolic_arc_engine import generate_symbolic_arc
+from utils.dilemma_logger import log_dilemma
 
 async def main():
     print("Welcome to Sailor's Ledger V2")
@@ -43,6 +44,14 @@ async def main():
             print("Invalid choice. Try again.")
 
         selected_response = scenario_packet["choices"][selected - 1]
+        # Log the dilemma after a valid choice is made
+        log_dilemma(
+            draw_number=i + 1,
+            card_name=draw["card_name"],
+            scenario=scenario_packet["scenario"],
+            choices=scenario_packet["choices"],
+            selected_tag=selected_response["tag"]
+        )
         seeder.add_draw(TarotDraw(
             card_name=draw["card_name"],
             card_meaning=draw["meaning"],
