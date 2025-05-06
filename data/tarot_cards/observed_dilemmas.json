@@ -70,5 +70,821 @@
       }
     ],
     "selected": "B"
+  },
+  {
+    "draw": 1,
+    "card": "Justice",
+    "scenario": "In the throes of power, you discover corruption lurking within your own faction. A choice must be made: do you reveal the truth and risk the stability you've built, or do you keep silent, allowing the corruption to fester while you retain your influence?",
+    "choices": [
+      {
+        "text": "Expose the corruption to the council and risk your position.",
+        "tag": "A"
+      },
+      {
+        "text": "Confront the corrupt members privately and seek a resolution.",
+        "tag": "B"
+      },
+      {
+        "text": "Ignore the issue and focus on consolidating your power.",
+        "tag": "C"
+      },
+      {
+        "text": "Manipulate the situation to benefit personally while others bear the consequences.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 2,
+    "card": "The Fool",
+    "scenario": "As you prepare to set off on your journey, a whispering breeze carries the scent of adventure, but you also hear warnings from the townsfolk about the dangers beyond the familiar borders. The excitement of the unknown tantalizes you, yet the fear of the unforeseen looms large. Do you embrace the adventure with an open heart or heed the caution and stay behind?",
+    "choices": [
+      {
+        "text": "Set off without a second thought, eager for whatever comes.",
+        "tag": "A"
+      },
+      {
+        "text": "Listen to the warnings and wait for a safer time.",
+        "tag": "B"
+      },
+      {
+        "text": "Prepare meticulously, gathering all advice before leaving.",
+        "tag": "C"
+      },
+      {
+        "text": "Create an elaborate plan but remain open to spontaneity.",
+        "tag": "D"
+      }
+    ],
+    "selected": "C"
+  },
+  {
+    "draw": 3,
+    "card": "The High Priestess",
+    "scenario": "After a long journey, you arrive at a sacred grove where the whispers of the ancients beckon you. You sense that a pivotal choice lies before you, one you've evaded in your quest. A strange energy fills the air, urging you to listen to your inner voice. Will you confront the intuition telling you to choose between the known paths of safety or the mysterious, uncharted territory that promises greater knowledge and power?",
+    "choices": [
+      {
+        "text": "Follow the well-trodden path of safety to ensure stability.",
+        "tag": "A"
+      },
+      {
+        "text": "Venture into the uncharted territory, trusting your instincts.",
+        "tag": "B"
+      },
+      {
+        "text": "Meditate and seek deeper understanding before making a choice.",
+        "tag": "C"
+      },
+      {
+        "text": "Seek the counsel of a local sage before deciding.",
+        "tag": "D"
+      }
+    ],
+    "selected": "B"
+  },
+  {
+    "draw": 1,
+    "card": "Justice",
+    "scenario": "You uncover a scandal within your guild that reveals hidden corruption, implicating both powerful allies and friends. You hold proof that could bring about their downfall. Will you act based on the principles of fairness and truth, or will you turn a blind eye to protect those you care for?",
+    "choices": [
+      {
+        "text": "Expose the corruption to the guild and face the fallout.",
+        "tag": "A"
+      },
+      {
+        "text": "Cover up the scandal and preserve your friendships.",
+        "tag": "B"
+      },
+      {
+        "text": "Confront the guilty parties privately to seek their reform.",
+        "tag": "C"
+      },
+      {
+        "text": "Leverage the information for personal gain.",
+        "tag": "D"
+      }
+    ],
+    "selected": "B"
+  },
+  {
+    "draw": 2,
+    "card": "Death",
+    "scenario": "In the wake of a devastating wildfire that has ravaged your homeland, you discover a hidden grove of untouched trees, ancient and sacred. As you mourn the loss of your community and its heritage, you are faced with a choice: do you protect this grove as a symbol of hope for regeneration, or do you clear it for materials to rebuild what was lost?",
+    "choices": [
+      {
+        "text": "Protect the grove and nurture its growth.",
+        "tag": "A"
+      },
+      {
+        "text": "Clear the grove to aid in rebuilding.",
+        "tag": "B"
+      },
+      {
+        "text": "Share the grove with the community to promote healing.",
+        "tag": "C"
+      },
+      {
+        "text": "Sacrifice the grove to forge a new identity for the future.",
+        "tag": "D"
+      }
+    ],
+    "selected": "D"
+  },
+  {
+    "draw": 3,
+    "card": "Wheel of Fortune",
+    "scenario": "You find yourself at a crossroads, witnessing the wheel of fortune turning before you. In your past, luck has smiled upon you, granting an unexpected fortune that changed your life. But the turn of the wheel has brought a new challenge: your newfound wealth attracts envy, and a rival threatens to take it all away. Do you embrace the risks of fortune, or do you seek to stabilize your life at the cost of opportunity?",
+    "choices": [
+      {
+        "text": "Embrace the challenge, confront your rival head-on.",
+        "tag": "A"
+      },
+      {
+        "text": "Fortify your wealth and seek allies for protection.",
+        "tag": "B"
+      },
+      {
+        "text": "Shed your riches and hide from the tumult.",
+        "tag": "C"
+      },
+      {
+        "text": "Attempt to sabotage the rival's plans stealthily.",
+        "tag": "D"
+      }
+    ],
+    "selected": "B"
+  },
+  {
+    "draw": 1,
+    "card": "Temperance",
+    "scenario": "After a tumultuous journey of conflict and sacrifice, you find yourself at a crossroads. The healers from your faction propose an ambitious plan to restore the fractured lands and your weary people. However, it requires a significant sacrifice of resources and time. What would true balance look like in this moment of healing?",
+    "choices": [
+      {
+        "text": "Wholeheartedly commit resources and time to the healers' plan.",
+        "tag": "A"
+      },
+      {
+        "text": "Propose a more modest plan that utilizes less resource but takes longer.",
+        "tag": "B"
+      },
+      {
+        "text": "Reject the healers' plan and use the remaining resources for immediate relief.",
+        "tag": "C"
+      },
+      {
+        "text": "Seek a council vote to gauge the collective opinion on the path forward.",
+        "tag": "D"
+      }
+    ],
+    "selected": "D"
+  },
+  {
+    "draw": 2,
+    "card": "Judgement",
+    "scenario": "A calling from an ancient oracle echoes in your mind, urging you to confront the shadowy deeds of your past. You have the chance to reveal a long-buried secret that could reconcile with those you have wronged. Do you take this chance to find redemption, knowing it could lead to forgiveness or further pain?",
+    "choices": [
+      {
+        "text": "Confess your past actions to the affected parties.",
+        "tag": "A"
+      },
+      {
+        "text": "Gather allies to defend your choices and control the narrative.",
+        "tag": "B"
+      },
+      {
+        "text": "Ignore the calling and put the past behind you.",
+        "tag": "C"
+      },
+      {
+        "text": "Seek out those who have wronged you instead, to flip the script.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 3,
+    "card": "The World",
+    "scenario": "After a long journey traversing diverse realms, you stand before the Great Nexus\u2014a place of endless possibilities where every path converges. As you reflect on your adventures, a sense of fulfillment washes over you, yet you realize you must choose where to anchor your essence. Will you remain in this moment of unity or venture forth into the unknown?",
+    "choices": [
+      {
+        "text": "Stay at the Great Nexus, embracing the completeness you feel.",
+        "tag": "A"
+      },
+      {
+        "text": "Set out to new uncharted worlds, seeking new experiences.",
+        "tag": "B"
+      },
+      {
+        "text": "Return home to share your journey and wisdom with others.",
+        "tag": "C"
+      },
+      {
+        "text": "Seek a way to balance both, connecting the Nexus with every place you've been.",
+        "tag": "D"
+      }
+    ],
+    "selected": "B"
+  },
+  {
+    "draw": 1,
+    "card": "The Emperor",
+    "core_dilemma": "Choosing between authoritarian control and shared leadership.",
+    "scenario": "You have just ascended to the throne after a chaotic power struggle. Your kingdom is fractured, with factions vying for power. You can assert strict control to impose order or build a coalition for shared governance. What will you decide?",
+    "choices": [
+      {
+        "text": "Declare absolute authority to unify the kingdom under your rule.",
+        "tag": "A"
+      },
+      {
+        "text": "Invite leaders from each faction to form a council.",
+        "tag": "B"
+      },
+      {
+        "text": "Establish strict laws to maintain order without regard for dissent.",
+        "tag": "C"
+      },
+      {
+        "text": "Step down and propose an election for the next ruler.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 2,
+    "card": "Temperance",
+    "core_dilemma": "Finding harmony between conflicting desires and responsibilities",
+    "scenario": "As a crisis looms in your community, you are approached by two factions: one demands immediate action to combat the threat, while the other insists on cautious deliberation to prevent further harm. Both groups offer profound benefits, but both require your full commitment. How do you choose to proceed?",
+    "choices": [
+      {
+        "text": "Rally the community for immediate action against the threat.",
+        "tag": "A"
+      },
+      {
+        "text": "Advocate for careful discussion and planning before any action.",
+        "tag": "B"
+      },
+      {
+        "text": "Split your efforts equally between both factions to find a middle ground.",
+        "tag": "C"
+      },
+      {
+        "text": "Withdraw from the factions altogether, seeking a personal path.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 3,
+    "card": "The Magician",
+    "core_dilemma": "Trusting your own abilities or relying on external help.",
+    "scenario": "You stand at the precipice of a magical trial, tasked with conjuring a powerful illusion to distract an ancient guardian. You realize you possess a latent ability to bend reality, but doubt clings to you. Do you trust your emerging skills to create the illusion, or do you seek assistance from a seasoned spellcaster nearby?",
+    "choices": [
+      {
+        "text": "Attempt to conjure the illusion yourself.",
+        "tag": "A"
+      },
+      {
+        "text": "Ask the seasoned spellcaster for help.",
+        "tag": "B"
+      },
+      {
+        "text": "Combine your efforts with the spellcaster to create a stronger illusion.",
+        "tag": "C"
+      },
+      {
+        "text": "Choose to withdraw and abandon the trial.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 1,
+    "card": "The Lovers",
+    "core_dilemma": "Balancing personal happiness against shared values.",
+    "scenario": "After a tumultuous journey of understanding your own desires, you find yourself at a crossroads with your partner. You are offered a chance to lead a powerful faction which aligns with your long-held values and dreams, but it requires you to relocate and potentially dissolve your partnership. Your partner wishes to stay in your current home, pursuing a different path that doesn't align with your emerging aspirations. What do you do?",
+    "choices": [
+      {
+        "text": "Accept the leadership position and leave your partner behind.",
+        "tag": "A"
+      },
+      {
+        "text": "Decline the offer and stay with your partner, supporting their dream.",
+        "tag": "B"
+      },
+      {
+        "text": "Negotiate a compromise that allows both of you to pursue your paths together.",
+        "tag": "C"
+      },
+      {
+        "text": "Cut ties with your partner completely to forge ahead unburdened.",
+        "tag": "D"
+      }
+    ],
+    "selected": "C"
+  },
+  {
+    "draw": 2,
+    "card": "Temperance",
+    "core_dilemma": "Finding harmony between conflicting desires.",
+    "scenario": "After a long journey, you come upon a village torn between two factions\u2014one seeking immediate retribution against an enemy and the other advocating for peace and reconciliation. As a traveler with experience in mediation, you are called upon to help. Do you seek a temporary truce to allow for healing, or do you urge for swift action to quell the unrest?",
+    "choices": [
+      {
+        "text": "Promote an immediate peace gathering to heal wounds.",
+        "tag": "A"
+      },
+      {
+        "text": "Advocate for a decisive strike against the enemy.",
+        "tag": "B"
+      },
+      {
+        "text": "Balance both sides by proposing a fail-safe response plan.",
+        "tag": "C"
+      },
+      {
+        "text": "Withdraw from the situation to avoid taking sides.",
+        "tag": "D"
+      }
+    ],
+    "selected": "B"
+  },
+  {
+    "draw": 3,
+    "card": "The Hermit",
+    "core_dilemma": "Choosing between withdrawal for insight or engaging with others for support",
+    "scenario": "After a period of introspection away from your community, you've gained profound insights about the nature of their struggles. As the tensions rise among your fellow villagers, you face a decision. Do you rejoin them and share your newfound wisdom, or do you retreat back into solitude to deepen your understanding?",
+    "choices": [
+      {
+        "text": "Return to the village and share what you've learned.",
+        "tag": "A"
+      },
+      {
+        "text": "Remain isolated for further reflection.",
+        "tag": "B"
+      },
+      {
+        "text": "Attempt to mediate between factions without revealing your insights.",
+        "tag": "C"
+      },
+      {
+        "text": "Encourage others to seek their own solitude and insights.",
+        "tag": "D"
+      }
+    ],
+    "selected": "D"
+  },
+  {
+    "draw": 1,
+    "card": "The Hermit",
+    "core_dilemma": "Choosing between isolation for self-discovery or rejoining society for support.",
+    "scenario": "After a long period of introspection and personal growth, you stand at the crossroads. You have learned much through your solitude but feel a deep yearning for connection. Will you return to your community, sharing the wisdom you gained, or remain in your retreat to delve deeper into your own thoughts?",
+    "choices": [
+      {
+        "text": "Return to the community and share your insights.",
+        "tag": "A"
+      },
+      {
+        "text": "Stay isolated to continue your personal journey.",
+        "tag": "B"
+      },
+      {
+        "text": "Seek out a small group for meaningful discussions.",
+        "tag": "C"
+      },
+      {
+        "text": "Create a sanctuary where others can come learn from you.",
+        "tag": "D"
+      }
+    ],
+    "selected": "D"
+  },
+  {
+    "draw": 2,
+    "card": "The Tower",
+    "core_dilemma": "Confronting the ruins of your past beliefs or rebuilding on false foundations",
+    "scenario": "In the aftermath of a devastating event where your old beliefs crumbled, you stand amidst the broken remnants of your past. Your followers look to you for guidance but your faith has significantly waned. You must decide whether to build anew on recollections of your prior beliefs or forge a completely new doctrine, risking alienation from those who once relied on you.",
+    "choices": [
+      {
+        "text": "Reaffirm the old beliefs and restore them to their former glory.",
+        "tag": "A"
+      },
+      {
+        "text": "Construct a new belief system that embraces the lessons of your downfall.",
+        "tag": "B"
+      },
+      {
+        "text": "Guide your followers to find their own beliefs, rather than impose yours.",
+        "tag": "C"
+      },
+      {
+        "text": "Sever ties with your followers and leave to seek truth alone.",
+        "tag": "D"
+      }
+    ],
+    "selected": "B"
+  },
+  {
+    "draw": 3,
+    "card": "The Fool",
+    "core_dilemma": "Embracing the unknown despite potential consequences.",
+    "scenario": "After your introspective journey around fear and failure, you discover an ancient map leading to a fabled treasure hidden deep within a treacherous forest. It's rumored that the journey will test your courage and wit. Do you follow your instinct to pursue this adventure or heed the warnings of others?",
+    "choices": [
+      {
+        "text": "Venture into the forest and seek out the treasure.",
+        "tag": "A"
+      },
+      {
+        "text": "Share the map with others and form a group to go together.",
+        "tag": "B"
+      },
+      {
+        "text": "Burn the map; ignorance is bliss.",
+        "tag": "C"
+      },
+      {
+        "text": "Seek knowledge from experienced adventurers before deciding.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 1,
+    "card": "The Hierophant",
+    "core_dilemma": "Choosing between tradition and personal truth.",
+    "scenario": "As a newly appointed spiritual leader, you are faced with a profound challenge. Your community demands strict adherence to ancient rituals that you question. Do you follow tradition blindly or forge a new path aligned with your beliefs?",
+    "choices": [
+      {
+        "text": "Uphold all traditional rituals, no matter the cost.",
+        "tag": "A"
+      },
+      {
+        "text": "Modify the rituals to reflect contemporary beliefs.",
+        "tag": "B"
+      },
+      {
+        "text": "Reject the rituals entirely and seek a new philosophy.",
+        "tag": "C"
+      },
+      {
+        "text": "Create a secret group to explore alternative practices.",
+        "tag": "D"
+      }
+    ],
+    "selected": "D"
+  },
+  {
+    "draw": 2,
+    "card": "The Hermit",
+    "core_dilemma": "Will you seek guidance from others or trust your own insights?",
+    "scenario": "After a long journey, you find a secluded cave where the whispers of your thoughts echo loudly. Here, surrounded by silence, you can either reflect on your experiences or seek out the villagers nearby for advice on your next steps. Do you embrace solitude to find your inner wisdom or seek the collective counsel of others?",
+    "choices": [
+      {
+        "text": "Meditate in solitude and trust your instincts.",
+        "tag": "A"
+      },
+      {
+        "text": "Seek out the villagers and share your experiences.",
+        "tag": "B"
+      },
+      {
+        "text": "Write down your thoughts and formulate a plan.",
+        "tag": "C"
+      },
+      {
+        "text": "Leave the cave and head towards a distant mountain for further reflection.",
+        "tag": "D"
+      }
+    ],
+    "selected": "D"
+  },
+  {
+    "draw": 3,
+    "card": "The High Priestess",
+    "core_dilemma": "Will you trust your instincts or seek concrete answers?",
+    "scenario": "During a quiet night, you are drawn to a hidden chamber within the ancient ruins. Strange whispers beckon you to enter, promising knowledge but also danger. You sense a powerful truth lies within, but so may hidden dangers. Do you trust your intuition and step inside, or do you seek guidance outside before proceeding?",
+    "choices": [
+      {
+        "text": "Enter the chamber alone, trusting your instincts.",
+        "tag": "A"
+      },
+      {
+        "text": "Seek counsel from your companions first.",
+        "tag": "B"
+      },
+      {
+        "text": "Leave the ruins altogether, fearing what you might find.",
+        "tag": "C"
+      },
+      {
+        "text": "Attempt to decipher the whispers without entering the chamber.",
+        "tag": "D"
+      }
+    ],
+    "selected": "D"
+  },
+  {
+    "draw": 1,
+    "card": "Death",
+    "core_dilemma": "Embracing a painful end to enable a new beginning.",
+    "scenario": "After a period of stagnation, the old ways of your village have led to famine and despair. A powerful oracle presents you with a choice: you must sacrifice a cherished tradition to make way for a new, transformative practice that promises hope. What will you do?",
+    "choices": [
+      {
+        "text": "Demand adherence to the old traditions despite their failure.",
+        "tag": "A"
+      },
+      {
+        "text": "Gather the villagers and destroy the symbols of the old ways.",
+        "tag": "B"
+      },
+      {
+        "text": "Seek a compromise that blends old and new traditions.",
+        "tag": "C"
+      },
+      {
+        "text": "Rally the youth to forge completely new practices.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 2,
+    "card": "The World",
+    "core_dilemma": "Do you embrace connection or pursue independence?",
+    "scenario": "After a long journey through uncharted lands, you return to your home village, now thriving and united. The townspeople look to you for leadership, but you feel a longing to explore beyond the horizon one last time. Do you stay and help them build a brighter future or venture out into the unknown once more?",
+    "choices": [
+      {
+        "text": "Lead the village in a grand celebration of unity.",
+        "tag": "A"
+      },
+      {
+        "text": "Establish a council to guide the village while you journey further.",
+        "tag": "B"
+      },
+      {
+        "text": "Refuse to commit and set off immediately for new lands.",
+        "tag": "C"
+      },
+      {
+        "text": "Teach the villagers how to thrive on their own and then leave.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 3,
+    "card": "The Tower",
+    "core_dilemma": "Do you confront the chaos or seek safety in ignorance?",
+    "scenario": "A sudden earthquake reveals the crumbling foundations of your city, and the walls are beginning to collapse. Panic spreads among the citizens as you stand at the epicenter of chaos. What action will you take?",
+    "choices": [
+      {
+        "text": "Rally the citizens and lead them to safety.",
+        "tag": "A"
+      },
+      {
+        "text": "Help reinforce the walls to prevent further collapse.",
+        "tag": "B"
+      },
+      {
+        "text": "Gather valuables and flee the city.",
+        "tag": "C"
+      },
+      {
+        "text": "Deny the danger and try to maintain order.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 1,
+    "card": "The Fool",
+    "core_dilemma": "embracing the unknown versus playing it safe",
+    "scenario": "As dawn breaks over the ancient forest, the unwitting adventurer, clutching a mysterious map, stands at the edge of a chasm. A glowing bridge of ivy beckons, promising adventure, while a worn path leads back to familiar safety. Behind them, the echoes of a gathering storm grow louder, urging a decision before the choice vanishes.",
+    "choices": [
+      {
+        "text": "Cross the glowing bridge into the unknown",
+        "tag": "A"
+      },
+      {
+        "text": "Take the worn path back to safety",
+        "tag": "B"
+      },
+      {
+        "text": "Call out to the trees for guidance",
+        "tag": "C"
+      },
+      {
+        "text": "Set the map ablaze and forge a new path",
+        "tag": "D"
+      }
+    ],
+    "selected": "D"
+  },
+  {
+    "draw": 2,
+    "card": "The Chariot",
+    "core_dilemma": "pushing through adversity to claim victory or retreating in fear",
+    "scenario": "As the thunderous roar of the approaching storm echoes through the valley, the sun glints off your mounted chariot\u2014the only hope for your village to break the siege of the marauding bandits. With the storm brewing, you must decide: do you charge into battle with your chariot to confront the enemy head-on, or do you turn back and seek shelter from the fury of nature?",
+    "choices": [
+      {
+        "text": "Charge into battle with your chariot",
+        "tag": "A"
+      },
+      {
+        "text": "Seek shelter in the nearby cave",
+        "tag": "B"
+      },
+      {
+        "text": "Rally the villagers to create a defensive perimeter",
+        "tag": "C"
+      },
+      {
+        "text": "Set fire to the bandits' supplies to weaken them",
+        "tag": "D"
+      }
+    ],
+    "selected": "D"
+  },
+  {
+    "draw": 1,
+    "card": "The Devil",
+    "core_dilemma": "confronting a dark pact to save a soul",
+    "scenario": "The ancient altar pulsates with a sinister energy as the High Priest of the Shadow offers you a deal: your freedom in exchange for binding an innocent soul to the darkness. Shadows writhe around you, urging you to accept the temptation that glimmers in the air.",
+    "choices": [
+      {
+        "text": "Decline the pact and destroy the altar",
+        "tag": "A"
+      },
+      {
+        "text": "Accept the deal to gain power",
+        "tag": "B"
+      },
+      {
+        "text": "Attempt to negotiate for the soul's release",
+        "tag": "C"
+      },
+      {
+        "text": "Rally nearby villagers to fight the Priest",
+        "tag": "D"
+      }
+    ],
+    "selected": "D"
+  },
+  {
+    "draw": 2,
+    "card": "The Empress",
+    "core_dilemma": "nurturing a budding alliance or harvesting its potential for personal gain",
+    "scenario": "In the lush fields of Verdance, the annual Fertility Festival has begun, a time to celebrate growth and forge alliances. The chosen representative of your village, adorned with blooms, must decide whether to share the sacred seeds of abundance with neighboring tribes for unity or to hoard them, ensuring your own tribe's dominance over the land.",
+    "choices": [
+      {
+        "text": "Share the sacred seeds with the neighboring tribes",
+        "tag": "A"
+      },
+      {
+        "text": "Hoard the seeds for your tribe's exclusive benefit",
+        "tag": "B"
+      },
+      {
+        "text": "Propose a trade for other resources instead",
+        "tag": "C"
+      },
+      {
+        "text": "Initiate a contest to showcase each tribe's strength",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 3,
+    "card": "The Lovers",
+    "core_dilemma": "choosing loyalty to a partner over allegiance to a cause",
+    "scenario": "As the sun sets, the Festival of Unity begins, demanding that all couples declare their bond publicly. You stand at the crossroads where your beloved urges you to abandon your mission to warn the town of a brewing storm, while the town's elder, holding the sacred amulet of protection, insists that you fulfill your duty or the community may perish.",
+    "choices": [
+      {
+        "text": "Rally your partner to help you warn the town",
+        "tag": "A"
+      },
+      {
+        "text": "Declare your love at the Festival and abandon your mission",
+        "tag": "B"
+      },
+      {
+        "text": "Steal the sacred amulet from the elder for protection",
+        "tag": "C"
+      },
+      {
+        "text": "Flee the Festival and confront the brewing storm alone",
+        "tag": "D"
+      }
+    ],
+    "selected": "C"
+  },
+  {
+    "draw": 1,
+    "card": "The Sun",
+    "core_dilemma": "embracing overwhelming success while risking the shadows of ego",
+    "scenario": "As the golden sun rises over Eldoria, the townsfolk gather to celebrate your triumphant victory over the Shadow Beast, but a mysterious figure\u2014a cloaked rival\u2014emerges from the crowd, vowing to expose your darkest secrets that threaten to overshadow your accomplishments, risking your newfound legacy.",
+    "choices": [
+      {
+        "text": "Confront the rival and demand they reveal their secrets in public.",
+        "tag": "A"
+      },
+      {
+        "text": "Bargain with the rival for their silence by offering them a portion of your glory.",
+        "tag": "B"
+      },
+      {
+        "text": "Flee the celebration to avoid the confrontation and reflect on your past.",
+        "tag": "C"
+      },
+      {
+        "text": "Inspire the crowd with a speech about true heroism, attempting to overshadow the rival's threat.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 2,
+    "card": "The Tower",
+    "core_dilemma": "embracing chaos to rebuild your identity",
+    "scenario": "As the darkened sky roils with storm clouds, a mighty bolt of lightning strikes the ancient tower at the center of the village, causing bricks to tumble and dust to cloud the air. Kira, clutching a shard of the tower's fallen stone, must decide whether to use its power to embrace the chaos of the moment and create a new path for herself, risking her safe past in the process.",
+    "choices": [
+      {
+        "text": "Channel the energy from the lightning to reconstruct the tower and claim your place as its new guardian.",
+        "tag": "A"
+      },
+      {
+        "text": "Shatter the stone shard to unleash a storm of chaos, inviting destruction to cleanse your surroundings.",
+        "tag": "B"
+      },
+      {
+        "text": "Flee with the shard, seeking safety and leaving the village to its fate, afraid of the chaos that follows.",
+        "tag": "C"
+      },
+      {
+        "text": "Gather the villagers to rally against the chaos, uniting them to rebuild together as a community.",
+        "tag": "D"
+      }
+    ],
+    "selected": "A"
+  },
+  {
+    "draw": 3,
+    "card": "Judgement",
+    "core_dilemma": "Embracing a painful truth to awaken your true purpose.",
+    "scenario": "As the midnight bell tolls in the shadowy remnants of the old cathedral, the ghost of your late mentor emerges from the mist, clutching a frayed scroll that reveals your long-buried destiny; denying it may protect you from pain, but revealing it risks the frail legacy of your family.",
+    "choices": [
+      {
+        "text": "Take the scroll and confront the ghost about your true fate.",
+        "tag": "A"
+      },
+      {
+        "text": "Burn the scroll to shield your family's legacy from darkness.",
+        "tag": "B"
+      },
+      {
+        "text": "Flee the cathedral, refusing to face the truth.",
+        "tag": "C"
+      },
+      {
+        "text": "Kneel before the ghost and beg for forgiveness for your past denials.",
+        "tag": "D"
+      }
+    ],
+    "selected": "D"
+  },
+  {
+    "draw": 1,
+    "card": "The Hierophant",
+    "core_dilemma": "Choosing between following tradition or forging a new path",
+    "scenario": "As the sun sets over the ancient stone circle, High Priestess Leona stands before you, clutching the scroll of the old rites, urging you to perform the ritual that has bound your clan for centuries. However, the voices of the youth rally behind you, desperate for a new dawn free from the confines of the past; your decision threatens to fracture the very fabric of your community.",
+    "choices": [
+      {
+        "text": "Perform the ancient ritual with Leona",
+        "tag": "A"
+      },
+      {
+        "text": "Reject the traditions and lead the youth in a new ceremony",
+        "tag": "B"
+      },
+      {
+        "text": "Steal the scroll from Leona and burn it",
+        "tag": "C"
+      },
+      {
+        "text": "Flee the circle, seeking a path away from both factions",
+        "tag": "D"
+      }
+    ],
+    "selected": "C"
   }
 ]

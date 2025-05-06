@@ -23,9 +23,8 @@ async def main():
     for i, draw in enumerate(draws):
         print(f"\nCard Drawn #{i+1}: {draw['card_name']}")
         print(f"Meaning: {draw['meaning']}")
-        print(f"Theme Question: {draw['question']}")
 
-        scenario_packet = await generate_tarot_question(draw["card_name"], draw["meaning"], draw["question"])
+        scenario_packet = await generate_tarot_question(draw["card_name"], draw["meaning"])
         if not scenario_packet:
             print("Failed to generate tarot scenario. Exiting.")
             return
@@ -49,6 +48,7 @@ async def main():
             draw_number=i + 1,
             card_name=draw["card_name"],
             scenario=scenario_packet["scenario"],
+            core_dilemma=scenario_packet.get("core_dilemma", "N/A"),
             choices=scenario_packet["choices"],
             selected_tag=selected_response["tag"]
         )

@@ -22,8 +22,8 @@ async def generate_world_narrative_update(world_summary: Dict) -> Optional[Dict]
 def build_narrative_prompt(summary: Dict) -> str:
     return f"Given this world summary:\n\n{summary}\n\nReturn a JSON object with an 'event_summary' string and a 'town_updates' object mapping town names to narrative updates and spirit changes."
 
-async def generate_seeded_world_state(seed_packet: Dict) -> Optional[Dict]:
-    prompt = build_seed_prompt(seed_packet)
+async def generate_seeded_world_state(arc_summary: str) -> Optional[Dict]:
+    prompt = build_seed_prompt(arc_summary)
 
     messages = [
         {"role": "system", "content": (
@@ -65,18 +65,21 @@ async def generate_seeded_world_state(seed_packet: Dict) -> Optional[Dict]:
         print(response)
         return None
 
-def build_seed_prompt(seed: Dict) -> str:
+def build_seed_prompt(arc_summary: str) -> str:
     return (
-        f"You are a fantasy world generator. Use the following tarot Seed Packet to define a starting world.\n\n"
-        f"Return only valid JSON with this exact structure:\n\n"
+        f"You are a fantasy world generator. Use the following symbolic narrative arc to define the mood and themes of a new world. "
+        f"Generate three distinct towns that symbolically reflect or contrast with this arc. "
+        f"Do not reference tarot cards, characters, or specific events — instead, reflect symbolic qualities, such as transformation, rebirth, deception, intuition, or strength. "
+        f"Each town must have:\n"
+        f"- A symbolic name (used as dictionary key)\n"
+        f"- A 'narrative': 1–2 sentence poetic description of the town’s tone and identity\n"
+        f"- A 'spirit': short phrase representing its underlying energy or mood\n\n"
+        f"Return valid JSON only in this format:\n"
         f"{{\n"
-        f'  "towns": {{\n'
-        f'    "TownName1": {{\n'
-        f'      "narrative": "Short descriptive paragraph for the town.",\n'
-        f'      "spirit": "A short label representing the town’s governing energy or ethos."\n'
-        f"    }},\n"
-        f'    "TownName2": {{ ... }}\n'
+        f"  \"towns\": {{\n"
+        f"    \"TownName1\": {{ \"narrative\": \"...\", \"spirit\": \"...\" }},\n"
+        f"    \"TownName2\": {{ \"narrative\": \"...\", \"spirit\": \"...\" }},\n"
+        f"    \"TownName3\": {{ \"narrative\": \"...\", \"spirit\": \"...\" }}\n"
         f"  }}\n"
-        f"}}\n\n"
-        f"Here is the tarot Seed Packet:\n\n{seed}"
+        f"}}\n"
     )

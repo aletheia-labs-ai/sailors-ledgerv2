@@ -4,10 +4,11 @@ from pathlib import Path
 
 LOG_PATH = Path("data/tarot_cards/observed_dilemmas.json")
 
-def log_dilemma(draw_number: int, card_name: str, scenario: str, choices: List[Dict], selected_tag: str):
+def log_dilemma(draw_number: int, card_name: str, scenario: str, core_dilemma: str, choices: List[Dict], selected_tag: str):
     record = {
         "draw": draw_number,
         "card": card_name,
+        "core_dilemma": core_dilemma,
         "scenario": scenario,
         "choices": choices,
         "selected": selected_tag
