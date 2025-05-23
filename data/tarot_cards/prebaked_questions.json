@@ -1,0 +1,30 @@
+
+
+{
+  "battle_preparation": {
+    "card": ["Strength"],
+    "question": "On the night before the battle, how do you prepare?",
+    "answers": {
+      "A": {
+        "text": "Meditate in solitude",
+        "card": "The Hermit",
+        "stat_changes": { "wisdom": 1 }
+      },
+      "B": {
+        "text": "Bring a lover to bed",
+        "card": "The Lovers",
+        "stat_changes": { "charisma": 1 }
+      },
+      "C": {
+        "text": "Feast with your soldiers",
+        "card": "Temperance",
+        "stat_changes": { "charisma": 1 }
+      },
+      "D": {
+        "text": "Review the battle plans",
+        "card": "Judgement",
+        "stat_changes": { "intelligence": 1 }
+      }
+    }
+  }
+}

@@ -3,17 +3,41 @@ from typing import Dict, Optional, List
 import json
 import copy
 from utils.tarot_examples import load_tarot_examples
+import os
+from pathlib import Path
+
+def load_question_templates(path: str = "data/tarot_cards/question_templates.json"):
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 async def generate_core_dilemma(card_name: str, meaning: str, history: Optional[List[Dict]] = None) -> Optional[str]:
+    templates = load_question_templates()
+    sample = list(templates.values())[:2]  # take first two templates
+    examples = "\n".join(
+        f"- {t['question']} -> {t['choices'][0]}, {t['choices'][1]}, {t['choices'][2]}, {t['choices'][3]}"
+        for t in sample
+    )
     prompt = (
         f"You are a narrative designer in a symbolic fantasy game. Each tarot card represents a new moral or mythic tension in the player's journey.\n"
         f"Based on the card below, return ONLY a symbolic 'core dilemma' — the distilled tension the character must face. Keep it short and evocative (e.g., 'sacrificing a loved one for the greater good', 'seizing power at the cost of your soul').\n\n"
         f"Card: {card_name}\nMeaning: {meaning}\n\n"
-        f"Return JSON with only this structure:\n"
-        f"{{ \"core_dilemma\": string }}"
+        "{ \"core_dilemma\": string }"
     )
     messages = [
-        { "role": "system", "content": "You generate distilled symbolic conflicts for a tarot-based story game." },
+        {
+            "role": "system",
+            "content": (
+                "You are a story seed engine. Your job is to distill a tarot card and its meaning into a concise core dilemma. "
+                "Each core dilemma must:\n"
+                "- Be a single declarative phrase (not a question).\n"
+                "- Name at least one concrete catalyst (person, object, force, or event).\n"
+                "- Imply a specific consequence or cost if unresolved.\n"
+                "Return ONLY JSON like this:\n"
+                '{ "core_dilemma": string }'
+                "\n\nHere are example question-to-dilemma mappings:\n"
+                f"{examples}\n"
+            )
+        },
         { "role": "user", "content": prompt }
     ]
     response = await call_llm(messages, model="gpt-4o-mini")
@@ -48,24 +72,24 @@ async def generate_tarot_question(card_name: str, meaning: str, history: Optiona
         {
             "role": "system",
             "content": (
-                "You are a narrative arc generator in a fantasy simulation game. Each tarot draw contributes one symbolic trial. "
-                "You will receive a tarot card, a symbolic dilemma, and prior draws. Use the dilemma to drive the scene.\n\n"
-                "Write a SCENARIO (1–2 sentences max) centered on a present decision. The scenario must:\n"
-                "- Be grounded in a dramatic moment with visible tension\n"
-                "- Include a named CATALYST: a specific person, object, ritual, creature, or force that causes the conflict\n"
-                "- Include a CONSEQUENCE: what is threatened, gained, or lost\n"
-                "- Include a RELATIONAL or EMOTIONAL STAKE: betrayal, love, fear, legacy, sacrifice, etc.\n"
-                "- Avoid vague settings (e.g., 'a festival') unless made highly specific or unusual\n"
-                "- Avoid internal states or reflection as the main driver\n\n"
-                "Then provide exactly 4 physical CHOICES, each labeled A-D. Each must be a concrete action the player takes in response to the scenario. "
-                "Do NOT use passive verbs (e.g., 'think', 'feel', 'reflect'). Use strong, outward verbs: 'strike', 'burn', 'steal', 'flee', 'confront', etc.\n\n"
-                "Return ONLY JSON matching this format:\n"
+                "You are a narrative arc generator. Each tarot draw adds one symbolic trial. "
+                "You will receive a tarot card, a core dilemma, and prior draws. Use the core dilemma verbatim. "
+                "Construct a single-sentence SCENARIO that:\n"
+                "- Is under 80 characters total.\n"
+                "- Uses generic descriptors (e.g., 'a merchant', 'a battlefield').\n"
+                "- Includes one concrete CATALYST, one clear CONSEQUENCE, and one RELATIONAL or EMOTIONAL STAKE.\n\n"
+                "Then provide exactly 4 CHOICES, each a brief action phrase (no punctuation) for example, in general:\n"
+                "A. Accept the offer\n"
+                "B. Reject the offer\n"
+                "C. Perform a self-serving action unique to this catalyst\n"
+                "D. Take an unexpected action that dramatically subverts the core dilemma\n\n"
+                "Return ONLY JSON in this format:\n"
                 "{\n"
                 "  \"core_dilemma\": string,\n"
                 "  \"scenario\": string,\n"
                 "  \"choices\": [ {\"text\": string, \"tag\": \"A\"|\"B\"|\"C\"|\"D\"} ],\n"
                 "  \"complete\": boolean,\n"
-                "  \"justification\": string (optional, only if complete is true)\n"
+                "  \"justification\": string (optional)\n"
                 "}"
             )
         },

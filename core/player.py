@@ -1,4 +1,5 @@
 from typing import Dict, List, Optional
+from schemas.stats import CharacterStats
 
 class Player:
     def __init__(self, name: str):
@@ -8,6 +9,7 @@ class Player:
         self.location: Optional[str] = None
         self.ledger: List[dict] = []
         self.history: List[str] = []
+        self.stats: CharacterStats = CharacterStats()
 
     def move_to(self, town_name: str):
         self.location = town_name
@@ -41,3 +43,16 @@ class Player:
         player.ledger = data.get("ledger", [])
         player.history = data.get("history", [])
         return player
+
+    def apply_stat_changes(self, changes: dict):
+        for key, delta in changes.items():
+            if hasattr(self.stats, key):
+                current = getattr(self.stats, key)
+                # calculate new value
+                new_value = current + delta
+                # clamp to valid range
+                field = self.stats.__fields__[key]
+                min_v = field.field_info.ge or 0
+                max_v = field.field_info.le if field.field_info.le is not None else new_value
+                new_value = max(min_v, min(max_v, new_value))
+                setattr(self.stats, key, new_value)

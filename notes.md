@@ -188,4 +188,8 @@ We now support two complementary models for tarot-driven character/world seeding
 - Choice B: Try to rally your forces with a rousing speech, inspiring them to courage. 
 - Choice C: Put together a team of elite volunteers to pursue the critical mission.
 - Choice D: Retreat and regroup, live to fight another day. 
+
+----
+Fortune Examples
+
 ---

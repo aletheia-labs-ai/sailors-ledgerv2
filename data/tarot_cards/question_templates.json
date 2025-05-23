@@ -1,0 +1,49 @@
+
+
+{
+  "battle_preparation": {
+    "question": "On the night before the battle, how do you prepare?",
+    "choices": [
+      "Meditate in solitude",
+      "Bring a lover to bed",
+      "Feast with your soldiers",
+      "Review the battle plans"
+    ]
+  },
+  "soldier_values": {
+    "question": "What do you value most in your soldiers?",
+    "choices": [
+      "Loyalty",
+      "Fearlessness",
+      "Strength",
+      "Honor"
+    ]
+  },
+  "lover_values": {
+    "question": "What do you value most in a lover?",
+    "choices": [
+      "Beauty",
+      "Loyalty",
+      "Compassion",
+      "Ambition"
+    ]
+  },
+  "solitude_memories": {
+    "question": "In your moments of solitude, what memories haunt you?",
+    "choices": [
+      "The guilt of a betrayal",
+      "Companions that you have lost",
+      "The victory that slipped from your grasp",
+      "A painful rejection"
+    ]
+  },
+  "signature_strategy": {
+    "question": "What is your signature strategy?",
+    "choices": [
+      "Aggressively charge the enemy",
+      "Create an unassailable defense",
+      "Skirmish to find an advantage",
+      "Precise and disciplined assaults"
+    ]
+  }
+}
